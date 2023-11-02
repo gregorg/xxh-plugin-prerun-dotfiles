@@ -208,26 +208,3 @@ set wildchar=<Tab> wildmenu wildmode=full
 " silent! call pathogen#helptags()
 " }}}
 
-
-" {{{ vundle
-set nocompatible      " Nécessaire
-filetype off          " Nécessaire
-
-" Ajout de Vundle au runtime path et initialisation
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-    
-" On indique à Vundle de s'auto-gérer :)
-Plugin 'gmarik/Vundle.vim'  " Nécessaire
-
-" 
-" C'est ici que vous allez placer la liste des plugins que Vundle doit gérer
-"
-"Plugin 'weynhamz/vim-plugin-minibufexpl'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-
-call vundle#end()            " Nécessaire
-filetype plugin indent on    " Nécessaire
-
-" }}}
