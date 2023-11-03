@@ -4,6 +4,7 @@ else
   done_file=$XXH_HOME/.xxh-plugin-prerun-dotfiles-done
 fi
 
+rm -vf $done_file
 if [[ ! -f $done_file ]]; then
   CURR_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
   cd $CURR_DIR/home
@@ -30,7 +31,7 @@ if [[ ! -f $done_file ]]; then
       mkdir -p $target_item
     fi
   done
-  mkdir -p `dirname $done_file`
-  echo 'done' > $done_file
+  #mkdir -p `dirname $done_file`
+  #echo 'done' > $done_file
 fi
 cd $XXH_HOME
