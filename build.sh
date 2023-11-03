@@ -16,7 +16,7 @@ done
 cd $CDIR
 rm -rf $build_dir && mkdir -p $build_dir
 
-for f in *prerun.sh home
+for f in *prerun.sh home pluginrc.zsh
 do
     cp -R $CDIR/$f $build_dir/
 done
