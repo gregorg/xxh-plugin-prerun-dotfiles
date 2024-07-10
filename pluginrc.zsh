@@ -41,6 +41,11 @@ alias es="~/Gitlab/L3/tool3box/bin/esgrep.py"
 # some patches exists with a -g or -B option
 alias cP='rsync --partial --progress'
 
+if [ -e ~/.aliases ]
+then
+    source ~/.aliases
+fi
+
 #########################################################################
 # COLORS
 #########################################################################
